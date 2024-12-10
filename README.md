@@ -26,12 +26,12 @@ Resources Spawning completed successfully.
 
 Add the MOD_PROFILE() macro into your method(s) you want to check and profile
 ```cpp
-	void WhateverMethodYouWantToProfile()
-	{
-		MOD_PROFILE();
+void WhateverMethodYouWantToProfile()
+{
+    MOD_PROFILE();
 
-		-- Rest of your method here
-	}
+    -- Rest of your method here
+}
 ```
 To profile subsections as well (e.g. to profile sub-sections of a method) just wrap your code in brackets and add
 a macro there. In this example below, it would profile both the outer scope of the whole function but also each sub-section.
